@@ -1,0 +1,126 @@
+{
+    "$schema": "../node_modules/@biomejs/biome/configuration_schema.json",
+
+    "formatter": {
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 120
+    },
+
+    "javascript": {
+        "formatter": {
+            "arrowParentheses": "asNeeded",
+            "quoteStyle": "single",
+            "jsxQuoteStyle": "single",
+            "trailingCommas": "es5"
+        }
+    },
+
+    "linter": {
+        "rules": {
+            "a11y": {
+                "useKeyWithClickEvents": "off",
+                "noLabelWithoutControl": "off",
+                "noSvgWithoutTitle": "off",
+                "noStaticElementInteractions": "off",
+                "useValidAnchor": "off",
+                "useAnchorContent": "off",
+                "useAltText": "off",
+                "useFocusableInteractive": "off"
+            },
+
+            "complexity": {
+                "noForEach": "off",
+                "noUselessFragments": "warn"
+            },
+
+            "style": {
+                "noImplicitBoolean": "off",
+                "useSelfClosingElements": {
+                    "level": "warn",
+                    "fix": "safe"
+                },
+
+                "useBlockStatements": "error",
+                "useConsistentArrayType": {
+                    "level": "error",
+                    "options": { "syntax": "shorthand" }
+                },
+                "useConst": {
+                    "level": "warn",
+                    "fix": "unsafe"
+                },
+                "useForOf": "error",
+                "useShorthandFunctionType": "warn",
+                "useSingleVarDeclarator": "error",
+                "noParameterAssign": "error",
+                "useAsConstAssertion": "error",
+                "noInferrableTypes": "error",
+                "useDefaultParameterLast": "error",
+                "useEnumInitializers": "error",
+                "noUnusedTemplateLiteral": "error",
+                "useNumberNamespace": "error",
+                "noUselessElse": "error"
+            },
+
+            "suspicious": {
+                "noArrayIndexKey": "off",
+
+                "noAssignInExpressions": "warn",
+                "noDuplicateCase": "warn",
+                "noEmptyBlockStatements": "off",
+                "noEmptyInterface": "off",
+                "noFallthroughSwitchClause": "off",
+                "useNamespaceKeyword": "warn",
+                "noShadowRestrictedNames": "off"
+            },
+
+            "correctness": {
+                "useExhaustiveDependencies": "off",
+                "useUniqueElementIds": "off",
+
+                "noUnusedImports": {
+                    "level": "warn",
+                    "fix": "safe"
+                },
+                "noUnusedVariables": "off",
+                "useValidTypeof": "off"
+            }
+        }
+    },
+
+    "assist": {
+        "enabled": true,
+        "actions": {
+            "source": {
+                "organizeImports": {
+                    "level": "off",
+                    "options": {
+                        "groups": [
+                            ":NODE:",
+                            ":BLANK_LINE:",
+                            ":PACKAGE:",
+                            ":BLANK_LINE:",
+                            ["/**"],
+                            ":BLANK_LINE:",
+                            ["#*", "#*/**", "@/**"],
+                            ":BLANK_LINE:",
+                            ":PATH:",
+                            ":BLANK_LINE:",
+                            ":URL:"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+
+    "overrides": [
+        {
+            "includes": ["**/*.scss", "**/*.css", "**/*.yaml", "**/*.yml"],
+            "formatter": {
+                "indentWidth": 2
+            }
+        }
+    ]
+}

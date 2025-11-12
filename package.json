@@ -1,0 +1,21 @@
+{
+    "name": "@rio-cloud/biome-config",
+    "version": "0.0.0",
+    "description": "A place for all our biome configs",
+    "author": "TB Digital Services GmbH",
+    "license": "Apache-2.0",
+    "files": [
+        "configs"
+    ],
+    "peerDependencies": {
+        "@biomejs/biome": "2.3.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rio-cloud/biome-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rio-cloud/biome-config/issues"
+    },
+    "homepage": "https://github.com/rio-cloud/biome-config#readme"
+}
