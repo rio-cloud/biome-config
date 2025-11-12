@@ -25,12 +25,14 @@ Now, your minimal `biome.json` could look like this:
 ```json
 {
     "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "extends": ["@rio-cloud/biome-config/frontend.json"],
+    "extends": ["@rio-cloud/biome-config/configs/frontend.json"],
     "files": {
         "includes": [
             "**",
             "!.*",
-            "!**/node_modules"
+            "!**/node_modules",
+            "src",
+            "!dist"
         ]
     }
 }
