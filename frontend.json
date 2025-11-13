@@ -58,6 +58,7 @@
                 "useDefaultParameterLast": "error",
                 "useEnumInitializers": "error",
                 "useForOf": "error",
+                "useNamingConvention": "off",
                 "useNumberNamespace": "error",
                 "useShorthandFunctionType": "warn",
                 "useSingleVarDeclarator": "error"
@@ -84,11 +85,10 @@
     },
 
     "assist": {
-        "enabled": true,
         "actions": {
             "source": {
                 "organizeImports": {
-                    "level": "off",
+                    "level": "on",
                     "options": {
                         "groups": [
                             ":NODE:",
