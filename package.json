@@ -1,6 +1,6 @@
 {
     "name": "@rio-cloud/biome-config",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "A place for all our biome configs",
     "author": "TB Digital Services GmbH",
     "license": "Apache-2.0",
