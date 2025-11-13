@@ -5,6 +5,7 @@
     "author": "TB Digital Services GmbH",
     "license": "Apache-2.0",
     "files": [
+        "docs",
         "frontend.json"
     ],
     "peerDependencies": {
