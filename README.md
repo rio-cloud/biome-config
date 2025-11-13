@@ -4,7 +4,7 @@ A place for all our biome configs - with the hope that it's only going to be one
 
 ## 🐶 Disclaimers
 
-Right now, only the [frontend](configs/frontend.json) config exists.
+Right now, only the [frontend](frontend.json) config exists.
 
 At the time of writing, this config is working with [biome](https://www.npmjs.com/package/@biomejs/biome)
 **version 2.3.5** and most likely above.
@@ -24,8 +24,8 @@ Now, your minimal `biome.json` could look like this:
 
 ```json
 {
-    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "extends": ["@rio-cloud/biome-config/configs/frontend.json"],
+    "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+    "extends": ["@rio-cloud/biome-config/frontend.json"],
     "files": {
         "includes": [
             "**",

@@ -1,6 +1,6 @@
 {
-    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "extends": ["./configs/frontend.json"],
+    "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+    "extends": ["frontend.json"],
 
     "files": {
         "includes": ["**", "!.*", "!**/node_modules"]
