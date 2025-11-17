@@ -70,9 +70,10 @@ settings, for example:
 ## ❤️ Contributing
 
 If you have a biome config that would like to see added here, please double-check if there's not already one that works
-for you. The [frontend](frontend.json) config should be sufficient. And you can always overrule or add settings to your
-local biome config without having to push those settings "upstream". After all, the configs in this repository are
-supposed to be a solid baseline for most of our projects - and hopefully, we can homogenize our code a bit.
+for you. The [frontend](frontend.json) config should be sufficient for most (if not all) projects that are using TypeScript. And
+remember that you can always overrule or add settings to your local biome config without having to push those settings
+"upstream". After all, the configs in this repository are supposed to be a solid baseline for most of our projects - and
+hopefully, we can homogenize our code a bit.
 
 If you see a config here and **do want** to change settings because you're sure that change needs to happen for everyone
 at RIO, feel free to [open an issue on GitHub](https://github.com/rio-cloud/biome-config/issues) 😎
