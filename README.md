@@ -26,21 +26,16 @@ Now, your minimal `biome.json` could look like this:
 {
     "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
     "extends": ["@rio-cloud/biome-config/frontend.json"],
-    "root": true,
-    "files": {
-        "includes": [
-            "**",
-            "!.*",
-            "!**/node_modules",
-            "src",
-            "!dist"
-        ]
-    }
+    "root": true
 }
 ```
 
-**Make sure to tune your `files.includes` to match your project structure!** (see
-[the biome docs](https://biomejs.dev/guides/configure-biome/#include-files-via-configuration) for reference).
+By default, this config tells biome to integrate with your git repository so that it automatically ignores filed
+specified [in your `.gitignore`](https://biomejs.dev/guides/integrate-in-vcs/) file. You can, however, fine-tune what's
+covered by biome and what's not by setting the `files.includes` property.
+
+Take a look at the [the biome docs](https://biomejs.dev/guides/configure-biome/#include-files-via-configuration) for
+reference.
 
 ## 💪 Using it
 
