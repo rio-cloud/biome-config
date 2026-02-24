@@ -37,7 +37,10 @@
 
             "complexity": {
                 "noForEach": "off",
-                "noUselessFragments": "warn"
+                "noUselessCatchBinding": "error",
+                "noUselessFragments": "warn",
+                "noUselessUndefined": "error",
+                "useMaxParams": "warn"
             },
 
             "style": {
@@ -67,7 +70,8 @@
                 "useNamingConvention": "off",
                 "useNumberNamespace": "error",
                 "useShorthandFunctionType": "warn",
-                "useSingleVarDeclarator": "error"
+                "useSingleVarDeclarator": "error",
+                "useConsistentArrowReturn": "warn"
             },
 
             "suspicious": {
@@ -85,7 +89,9 @@
                 },
                 "noUnusedVariables": "off",
                 "useExhaustiveDependencies": "off",
-                "useUniqueElementIds": "off"
+                "useUniqueElementIds": "off",
+                "noNestedComponentDefinitions": "error",
+                "useSingleJsDocAsterisk": "warn"
             }
         }
     },
@@ -93,6 +99,7 @@
     "assist": {
         "actions": {
             "source": {
+                "noDuplicateClasses": "on",
                 "organizeImports": {
                     "level": "on",
                     "options": {
