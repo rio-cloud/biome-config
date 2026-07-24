@@ -17,6 +17,9 @@
     "peerDependencies": {
         "@biomejs/biome": "^2.5.5"
     },
+    "scripts": {
+        "test": "echo ✨ no tests needed ✨"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/rio-cloud/biome-config.git"
