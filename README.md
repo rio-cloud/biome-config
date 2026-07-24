@@ -7,10 +7,10 @@ A place for all our biome configs - with the hope that it's only going to be one
 Right now, only the [frontend](frontend.json) config exists, but it should work for non-frontend codebases just as well.
 
 At the time of writing, this config is working with [biome](https://www.npmjs.com/package/@biomejs/biome)
-**version 2.3.5** and most likely above.
+**version 2.5.5** and most likely above.
 
 ⚠️ There have been some fluctuations regarding config structure in the past, though - so if you're running a newer biome
-version and experience weird behaviour, please [get in touch](https://github.com/rio-cloud/biome-config/issues). 
+version and experience weird behavior, please [get in touch](https://github.com/rio-cloud/biome-config/issues). 
 
 ## 🛠️ Installation
 
@@ -24,9 +24,8 @@ Now, your minimal `biome.json` could look like this:
 
 ```json
 {
-    "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
-    "extends": ["@rio-cloud/biome-config/frontend.json"],
-    "root": true
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "extends": ["@rio-cloud/biome-config/frontend"]
 }
 ```
 
@@ -34,7 +33,7 @@ By default, this config tells biome to integrate with your git repository so tha
 specified [in your `.gitignore`](https://biomejs.dev/guides/integrate-in-vcs/) file. You can, however, fine-tune what's
 covered by biome and what's not by setting the `files.includes` property.
 
-Take a look at the [the biome docs](https://biomejs.dev/guides/configure-biome/#include-files-via-configuration) for
+Take a look at the [biome docs](https://biomejs.dev/guides/configure-biome/#include-files-via-configuration) for
 reference.
 
 ## 💪 Using it
@@ -65,10 +64,10 @@ settings, for example:
 ## ❤️ Contributing
 
 If you have a biome config that would like to see added here, please double-check if there's not already one that works
-for you. The [frontend](frontend.json) config should be sufficient for most (if not all) projects that are using TypeScript. And
-remember that you can always overrule or add settings to your local biome config without having to push those settings
-"upstream". After all, the configs in this repository are supposed to be a solid baseline for most of our projects - and
-hopefully, we can homogenize our code a bit.
+for you. The [frontend](frontend.json) config should be sufficient for most (if not all) projects that are using
+TypeScript. And remember that you can always overrule or add settings to your local biome config without having to push
+those settings "upstream". After all, the configs in this repository are supposed to be a solid baseline for most of our
+projects - and hopefully, we can homogenize our code a bit.
 
 If you see a config here and **do want** to change settings because you're sure that change needs to happen for everyone
 at RIO, feel free to [open an issue on GitHub](https://github.com/rio-cloud/biome-config/issues) 😎

@@ -1,0 +1,12 @@
+{
+    "name": "dummy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "check": "biome check --verbose"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.5.5"
+    }
+}
